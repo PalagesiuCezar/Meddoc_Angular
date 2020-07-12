@@ -1,0 +1,126 @@
+@import '../../../../assets/scss/shared/buttons';
+
+.bcm-slr-banner{
+  margin-top: 80px;
+  display: flex;
+  background-color: #E5E7E2;
+  border-radius: 8px;
+
+  .logo-name{
+    margin-left: 4px;
+  }
+}
+
+.bcm-slr-info{
+
+  width: 654px;
+  height: 345px;
+  flex-grow: 1;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 176.9%;
+  padding: 50px 0 0 70px;
+  align-items: center;
+
+  .bcm-slr-info-message{
+
+    margin-top: 37px;
+
+    h4 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 176.9%;
+      color: $default-theme-green;
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+}
+
+.bcm-slr-banner-image{
+  width: 516px;
+  height: inherit;
+  flex-grow: 1;
+}
+
+.newsletter-bnr{
+
+  height: 353px;
+  display: flex;
+  background-color: $default-theme-white;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-bottom: 120px;
+  margin-top: 100px;
+
+  .newsletter-bnr-img{
+
+    width: 300px;
+
+    .envelope{
+      position: absolute;
+      bottom: 96px;
+
+    }
+  }
+
+}
+
+.newsletter-bnr-form-container{
+  width: 870px;
+  padding: 50px 0 0 70px;
+
+  h4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 176.9%;
+    width: 510px;
+  }
+
+  .newsletter-bnr-form{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 25px;
+
+    label {
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    button{
+      border: none;
+    }
+
+    //, textarea:focus, select:focus
+
+    input:focus{
+      outline: none;
+    }
+
+    .form-control{
+      width: 300px;
+      font-size: 18px;
+      line-height: 21px;
+      border: none transparent;
+      border-bottom: 2px solid #4B4B4B;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .form-control-input-email{
+      margin-left: 30px;
+    }
+  }
+}
+
+

@@ -1,0 +1,190 @@
+@import '../../../../../assets/scss/shared/colors';
+
+$f-size: 18px;
+$f-color: #6C6C6C;
+$b-radius: 7px;
+$f-weight: 600;
+
+.side-page {
+    display: flex;
+    flex-direction: column;
+
+
+    // Management box style 
+    .management-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 16.5%;
+        bottom: 15px;
+        
+        .management-fields {
+            width: 270px;
+            height: 231px;
+            padding: 0px;
+        }
+
+        .management-fields > li {
+            margin-top: 5px;
+            font-size: $f-size;
+            width: 270px;
+            height: 44px;
+            color: $f-color;
+            border-radius: $b-radius;
+        }
+
+        li > p {
+            position: relative;
+            top: 7.5px;
+            left: 20px;
+        }
+
+        .management-fields > li:hover {
+            background: $default-theme-green;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    // Garden box style 
+    .garden-box {
+        @extend .management-box;
+        // position: relative;
+        // display: flex;
+        // flex-direction: column;
+        // left: 16.5%;
+        bottom: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+        border-radius: $b-radius;
+        width: 270px;
+        height: 231px;
+
+        .garden-title {
+            color: $f-color;
+            position: relative;
+            top: 10px;
+            left: 25px;
+            font-size: 22px;
+            font-weight: $f-weight;
+        }
+
+        li {
+            position: relative;
+            right: 15px;
+            color: $default-theme-green;
+            margin-top: 7px;
+            font-size: $f-size;
+        }
+    }
+
+    .description-box {
+        @extend .management-box;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+        border-radius: $b-radius;
+        width: 270px;
+        
+
+        .description-title {
+            // Extends .garden-title
+            color: $f-color;
+            position: relative;
+            top: 10px;
+            left: 18px;
+            font-size: 22px;
+            font-weight: $f-weight;
+        }
+
+        .description-content {
+            position: relative;
+            font-size: $f-size;
+            text-align: justify;
+            padding-left: 17px;
+            padding-right: 17px;
+            // line-height: 90px;
+        }
+
+        hr {
+            position: relative;
+            bottom: 20px;
+            width: 100%;
+            opacity: 0.5;
+            background-color: rgb(246, 238, 238);
+        }
+
+        .account-title {
+            @extend .description-title;
+            position: relative;
+            top: -25px;
+        }
+
+        .facebook-box {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            left: 17px;
+            bottom: 30px;
+
+            .facebook-icon {
+                width: 23.14px;
+                height: 23.14px;
+            }
+
+            .facebook-text {
+                margin-left: 10px;
+                color: $default-theme-green;
+                font-weight: $f-weight;
+            }
+        }
+    }
+}
+
+.background-box {
+    position: absolute;
+    bottom: 57%;
+    left: 40%;
+
+    .background-picture {
+        border-radius: $b-radius;
+    }
+}
+
+.mini-navbar {
+    position: absolute;
+    top: 47%;
+    left: 40%;
+    width: 870px;
+    height: 61px;
+    border: 1px solid #B4B4B4;
+    box-sizing: border-box;
+    border-radius: $b-radius;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: $f-color;
+    font-size: $f-size;
+    list-style-type: none;
+    padding: 0px;
+
+    p {
+        margin-top: 14.5px;
+    }
+
+    .purchase-history {
+        border: none;
+    }
+}
+
+.mini-navbar > li {
+    border-right: 1px solid #B4B4B4;
+    width: 290px;
+}
+
+.mini-navbar > li:hover {
+    background: $default-theme-green;
+    color: white;
+    cursor: pointer;
+}

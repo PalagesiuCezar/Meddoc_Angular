@@ -1,0 +1,81 @@
+$button-color: #FFFFFF;
+
+.navbar{
+  background: #FFFFFF;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  line-height: 21px;
+  height: 100px;
+
+}
+
+.container{
+  display: flex;
+}
+
+.search-bar{
+
+  display: flex;
+  background-color: #1CC661;
+  height: 44px;
+  border-radius: 7px;
+
+  input#search {
+    background-image: url("../../../assets/img/header/search-icon.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    background-color: #F4F4F4;
+    border: 0;
+    width: 340px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+
+  input#search:focus{
+    background-image: none;
+  }
+
+  input::placeholder{
+    color: #232323;
+  }
+
+
+
+  .search-trigger-action{
+    cursor: pointer;
+    color: $button-color;
+    width: 130px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.add-announcement-action{
+
+  background-color: #6C6C6C;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 270px;
+  height: 44px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  a{
+    display: flex;
+  }
+
+  a span{
+    color: $button-color;
+    margin-left: 3px;
+  }
+}
+
+.user-options-dropdown{
+
+  cursor: pointer;
+}
