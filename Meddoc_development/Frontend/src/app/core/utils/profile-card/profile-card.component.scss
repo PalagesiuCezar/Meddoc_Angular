@@ -1,0 +1,104 @@
+@import '../../../../assets/scss/shared/colors';
+
+$f-size: 18px;
+$f-color: #6C6C6C;
+$b-radius: 7px;
+$f-weight: 600;
+
+.profile-box {
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+    border-radius: $b-radius;
+    width: 270px;
+    height: 418px;
+    flex-direction: column;
+    left: 15%;
+    margin: 30px;
+    text-align: center;
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-left: 87px;
+        margin-top: 30px;
+    }
+
+    .username {
+        margin-top: 7px;
+        font-size: 24px;
+        color: #4B4B4B;
+        font-weight: bold;
+    }
+
+    .rating-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 50px;
+
+        .rating-number{
+            font-size: $f-size;
+            color: #4B4B4B;
+            font-weight: $f-weight;
+        }
+    }
+    
+    .space1 {
+        // height: 0.05px;
+        width: 100%;
+        opacity: 0.5;
+        background-color: rgb(246, 238, 238);
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        color: $f-color;
+
+        .location-icon {
+            width: 14px;
+            height: 19px;
+            margin-right: 10px;
+        }
+
+        .location-name {
+            margin-top: -3px;
+            font-size: $f-size;
+        }
+    }
+
+    .member {
+        @extend .location;
+        .member-icon {
+            width: 12px;
+            height: 16px;
+            margin-right: 10px;
+        }
+
+        .member-since {
+            @extend .location-name;
+        }
+    }
+
+    .space2 {
+        @extend .space1;
+        margin-top: 5px;
+    }
+
+    .holiday {
+        @extend .location;
+        .plane-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+        .holiday-text {
+            @extend .location-name;
+        }
+    }
+}
