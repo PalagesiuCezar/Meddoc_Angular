@@ -1,0 +1,26 @@
+<div class="panel">
+  <div class="container">
+    <div class="row">
+      <div class="form-panel col-12 col-sm-10 col-md-9 col-lg-8">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="form-panel-holder col-md-10">
+              <div class="form-header">
+                <h3> Inregistrare </h3>
+                <div class="redirect">
+                  <a> Inregistreaza-te ca vanzator </a>
+                </div>
+              </div>
+              <div class="form-content">
+                <router-outlet></router-outlet>
+              </div>
+              <div class="form-footer">
+                <p>Ai cont deja? <a [routerLink]="['/auth/login']">Autentifica-te</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+@import '../../authentication.component';
+
+.panel{
+  @extend %background-cover-full;
+  background-image: url("../../../../../assets/img/register/register-background.png");
+}
+
+.redirect{
+
+  a{
+    @extend %form-link-field-underline;
+    @include font(bold, 18px, 21px);
+  }
+
+  margin-bottom: 40px;
+
+}
+
+@media (max-width: 767.98px) {
+  .form-group:not(:nth-child(1)) {
+    margin-top: 15px;
+  }
+  .panel {
+    background: white !important;
+  }
+  .form-panel {
+    box-shadow: none;
+  }
+}
+

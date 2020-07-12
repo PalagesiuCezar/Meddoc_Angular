@@ -1,0 +1,56 @@
+<div class="panel">
+  <div class="container">
+    <div class="row">
+    <div class="form-panel col-12 col-sm-10 col-md-8 col-lg-6">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="form-panel-holder col-md-10">
+            <div class="form-header">
+              <h3> Autentificare </h3>
+              <div class="redirect">
+                <p>Nu ai cont?<a routerLink="/register">Inregistreaza-te</a></p>
+              </div>
+            </div>
+            <div class="form-content">
+              <form class="form-container" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" formControlName="email" type="text" class="form-control no-outline">
+                  <div *ngIf="submitted && field.email.errors" class="form-invalid-fields">
+                    <span *ngIf="field.email.errors.required">Email is required</span>
+                    <span *ngIf="field.email.errors.pattern">Email is invalid</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="password">Parola</label>
+                  <input id="password" formControlName="password" type="password" class="form-control no-outline">
+                  <div *ngIf="submitted && field.password.errors" class="form-invalid-fields">
+                      <span *ngIf="field.password.errors.required">Password is required</span>
+                  </div>
+                </div>
+                <div class="form-group remind-pass-group">
+                  <input type="checkbox">
+                  <span>Retine Parola</span>
+                </div>
+                <div class="form-buttons">
+                  <button type="submit" id="login-form-btn" class="default-bios-btn">
+                    <span>Continua</span>
+                    <img src="assets/img/home/become_seller_banner/arrow.svg">
+                  </button>
+                  <div class="facebook-bios-btn facebook-btn">
+                    <img src="../../../../assets/img/shared/facebook-icon.png">
+                    <span>Logare cu Facebook</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form-footer">
+              <a>Ti-ai uitat parola sau mail-ul?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

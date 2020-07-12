@@ -1,0 +1,29 @@
+@import 'authentication/_forms';
+@import 'authentication/_buttons';
+
+.form-group{
+
+  @extend %form-field-focus-transform;
+  @extend %form-group-body;
+
+}
+
+.form-group:not(:nth-child(1)):not(:nth-child(2)){
+  margin-top: 40px;
+}
+
+#terms-conditions{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+
+  span{
+    margin-left: 15px;
+  }
+
+  a {
+    @extend %form-link-field-underline;
+  }
+}

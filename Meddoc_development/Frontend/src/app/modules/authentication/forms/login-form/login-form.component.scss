@@ -1,0 +1,45 @@
+@import '../../authentication.component';
+
+.panel{
+  @extend %background-cover-full;
+  background-image: url("../../../../../assets/img/login/login-background.png");
+}
+
+.form-group{
+
+  @extend %form-field-focus-transform;
+  @extend %form-group-body;
+
+  width: 100%;
+
+}
+
+.form-group:not(:nth-child(1)){
+  margin-top: 40px;
+}
+
+@media (max-width: 575.98px) {
+  .form-group:not(:nth-child(1)){
+    margin-top: 15px;
+  }
+  .panel{
+    background: white !important;
+  }
+  .form-panel{
+     box-shadow: none;
+  }
+}
+
+.remind-pass-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+
+  span{
+    @include font(normal, 16px, 19px);
+    margin-left: 10px;
+    color: #848484;
+  }
+}
+

@@ -1,0 +1,33 @@
+@import 'authentication/_buttons';
+@import 'authentication/_forms';
+
+.form-panel {
+  @extend %form-panel;
+}
+
+.redirect{
+
+  @include font(normal, 18px, 21px);
+  margin-bottom: 30px;
+
+  p{
+    color: #B4B4B4;
+
+    a{
+      @extend %form-link-field-underline;
+      margin-left: 3px;
+      font-weight: bold;
+    }
+  }
+}
+
+.form-footer{
+
+  margin-top: 40px;
+  margin-bottom: 15px;
+  a {
+    @include font(500, 16px, 19px);
+    @extend %form-link-field-underline;
+  }
+
+}
